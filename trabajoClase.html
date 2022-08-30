@@ -7,8 +7,20 @@
     0-8859-1"/>
 
     <title>Página sencilla</title>
+    <style type="text/css">
+        body {background-color:white; font-family: sans-serif;}
+        label {color: maroon; display: block; padding:5px;}
+    </style>
+    <script type="text/javascript">
+        function cambiarAspecto(elemento){
+            var elementosObtenidos = document.getElementsByTagName(elemento);
+            elementosObtenidos[0].style.backgroundColor = '#FF6633';
+            elementosObtenidos[1].style.backgroundColor = '#FF9933';
+            elementosObtenidos[2].style.backgroundColor = '#FFCC33';
+        }
+    </script>
 </head>
 <body>
-    
+    <p>Esta página es <strong>muy sencilla</strong></p>
 </body>
 </html>
