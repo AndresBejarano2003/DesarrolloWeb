@@ -1,0 +1,21 @@
+input {
+    background-color: rgba(0, 128, 0, 0.342);
+    color: darkblue;
+}
+
+.contenedor {
+    width: 500px;
+    background-color: aquamarine;
+}
+
+.start {
+    float: inline-start;
+}
+
+.end {
+    float: inline-end;
+}
+
+.gg {
+    display: flex;
+}

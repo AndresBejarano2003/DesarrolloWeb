@@ -1,13 +1,23 @@
 <html lang="en">
+
 <head>
     <title>Ejemplo DOM - aprenderaprogramar.com</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
     <style type="text/css">
-        body {background-color:white; font-family: sans-serif;}
-        label {color: maroon; display: block; padding:5px;}
+        body {
+            background-color: white;
+            font-family: sans-serif;
+        }
+
+        label {
+            color: maroon;
+            display: block;
+            padding: 5px;
+        }
     </style>
     <script type="text/javascript">
-        function cambiarAspecto(elemento){
+        function cambiarAspecto(elemento) {
             var elementosObtenidos = document.getElementsByTagName(elemento);
             elementosObtenidos[0].style.backgroundColor = '#FF6633';
             elementosObtenidos[1].style.backgroundColor = '#FF9933';
@@ -15,6 +25,7 @@
         }
     </script>
 </head>
+
 <body>
     <div id="cabecera">
         <h1>Portal web aprenderaprogramar.com</h1>
@@ -22,7 +33,32 @@
     </div>
     <!--Formulario de contacto-->
     <div style="width: 450px;">
-        <form name="formularioContacto" class="formularioTipo1" method="get" action="accion.html" onclick="cambiarAspecto('label')"></form>
+        <form name="formularioContacto" class="formularioTipo1" method="get" action="accion.html"
+            onclick="cambiarAspecto('label')"></form>
     </div>
+
+    <p>Si quieres contactar con nosotros enviamos este formulario relleno:</p>
+    <div class="gg">
+        <label for="nombre">
+            <div class="contenedor start"><span>Nombre:</span></div>
+            <div class="contenedor end"><input id="nombre" type="text" name="nombre" /></div>
+        </label>
+    </div>
+    <div >
+        <label for="apellidos">
+            <div class="contenedor start"><span>Apellidos:</span></div>
+            <div class="contenedor end"><input id="apellidos" type="text" name="apellidos" /></div>
+        </label>
+    </div>
+    <div >
+        <label for="email">
+            <div class="contenedor start"><span>Correo electrónico:</span></div>
+            <div class="contenedor end"><input id="email" type="text" name="email" /></div>
+        </label>
+    </div>
+    <label for="">
+        <input type="submit" value="Enviar" />
+    </label>
 </body>
+
 </html>
